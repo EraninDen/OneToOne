@@ -39,8 +39,12 @@ public class MainApp {
       userService.add(user7);
       userService.add(user6);
 
-      System.out.println(userService.findByModelAndSeries("Focus", 2));
-      System.out.println(userService.findByModelAndSeries("M", 5));
+      //System.out.println(userService.findByModelAndSeries("Focus", 2));
+      //System.out.println(userService.findByModelAndSeries("M", 5));
+
+      System.out.println(userService.getCar("M", 5));
+      System.out.println(userService.getCar("Focus", 2));
+
 
       List<User> users = userService.listUsers();
       for (User user : users) {

@@ -24,6 +24,10 @@ public class User  {
    private String email;
 
    public User() {}
+
+   public User(String firstName){
+      this.firstName = firstName;
+   }
    
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
@@ -36,6 +40,13 @@ public class User  {
       this.firstName = firstName;
       this.lastName = lastName;
       this.email = email;
+   }
+
+   @Override
+   public String toString() {
+      return "User{" +
+              "firstName='" + firstName + '\'' +
+              '}';
    }
 
    public Long getId() {
